@@ -1,28 +1,40 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
+--Structuring your HTML using header, body, footer, etc. instead of using "div's" to seperate content on your page.
 
 2. What is the box model?
+--It is the space around an element in the form of margin and padding. Margin is how it keeps space from elements around the element and the padding shows the space between the walls of the element.
 
 3. What is the difference between IDs and Classes?
+--ID's are used to identify one element and a Class is used to identify multiple elements.
 
 4. What does the z-index do?
+--Justify where on the visual axis that an item lies. For example, if you have two overlapping images and you want one to show above the other, you can adjust the z-index to do this.
 
 5. Summarize what the keyword 'this' is used for?
+--To describe ownership inside of a function.
 
 6. What is a callback?
+--A function that is passed to another function as a variable.
 
 7. What is a closure?
+--A closeure is a function inside of a function. AKA "Function Inception"
 
 8. How does prototype work?
+--prototype inherits the information from its original object which can be called / used later.
 
 9. What is MVC?
+--It is how code is rendered visually on the users computer.
 
 10. What is the component lifecycle?
+--It is how a component runs through its lifecycle process which can be overriden various methods.
 
 11. What is REST?
+--Representational State Transfer is how computers talk with servers around the world.
 
 12. Name three ways of getting data from the URL using express
+-- req.body, params, & query.
 
 create table users (
 id serial,
@@ -33,9 +45,13 @@ email varchar(255)
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
 -Get all users:
+GET * FROM users;
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+INSERT INTO users (name, email) VALUES ('your name', 'fake@fake.com');
 
 -Update the newly created user's name to 'Bobby Boy':
+UPDATE users VALUES name WHERE name = 'your name' TO 'Bobby Boy'
 
 -Delete the newly updated user:
+DELETE id, name, email FROM users WHERE name = 'Bobby Boy';
